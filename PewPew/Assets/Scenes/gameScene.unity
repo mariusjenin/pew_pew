@@ -447,11 +447,41 @@ PrefabInstance:
       propertyPath: field of view
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_LineWidth
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_LineLength
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_StopLineAtFirstRaycastHit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2788581073281131786, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 985425548}
+    - target: {fileID: 2788581073281131786, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581073281131796, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2788581073288184383, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -567,10 +597,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_LineWidth
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_LineLength
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_StopLineAtFirstRaycastHit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2788581074542423362, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 985425548}
+    - target: {fileID: 2788581074542423362, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581074542423372, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_MaxRaycastDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b529c4a03abe174bbc7111a7641205b, type: 3}
