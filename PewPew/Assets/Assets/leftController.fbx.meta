@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: f36e4b7b30a26f449852095c03542d05
+guid: 6b1200a96cb8ac54e801b64104efc872
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable:
-  - first:
-      74: -2846020079780903132
-    second: seat|seat|seat|seatAction|seat|seatAction
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
