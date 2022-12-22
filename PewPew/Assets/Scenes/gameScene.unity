@@ -442,101 +442,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2788581073134536445, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: field of view
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LineWidth
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LineLength
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073281131784, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_StopLineAtFirstRaycastHit
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2788581073281131786, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 985425548}
-    - target: {fileID: 2788581073281131786, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_MaxRaycastDistance
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073281131796, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_MaxRaycastDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073288184383, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.98927236
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073288184383, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.14608307
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073288184383, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -16.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598016, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 12.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.97513
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.22163348
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581073355598022, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -25.61
-      objectReference: {fileID: 0}
     - target: {fileID: 2788581074071977180, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_Name
@@ -570,17 +480,17 @@ PrefabInstance:
     - target: {fileID: 2788581074071977183, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2788581074071977183, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2788581074071977183, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2788581074071977183, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
@@ -597,40 +507,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LineWidth
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_LineLength
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581074542423360, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_StopLineAtFirstRaycastHit
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2788581074542423362, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 985425548}
-    - target: {fileID: 2788581074542423362, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_MaxRaycastDistance
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 2788581074542423372, guid: 1b529c4a03abe174bbc7111a7641205b,
-        type: 3}
-      propertyPath: m_MaxRaycastDistance
-      value: 10
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b529c4a03abe174bbc7111a7641205b, type: 3}

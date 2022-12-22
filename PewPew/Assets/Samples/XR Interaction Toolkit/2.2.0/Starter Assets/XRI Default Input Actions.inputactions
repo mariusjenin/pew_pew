@@ -1017,7 +1017,7 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",                
+                    "name": "",
                     "id": "31d838df-4d4e-4c16-a373-b9c07d9d2e2a",
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=12,sweepBehavior=1),Sector(directions=2,sweepBehavior=2)",
@@ -1489,6 +1489,62 @@
                     "processors": "",
                     "groups": "",
                     "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LeftHand shoot",
+            "id": "27858864-18d7-4d41-b0a7-29e979a33166",
+            "actions": [
+                {
+                    "name": "shoot",
+                    "type": "Button",
+                    "id": "e0d79ca5-f0bf-4663-aded-b2bb54871b86",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "12cb38e3-fa55-4b31-be2b-d7b97377e2e0",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "RightHand shoot",
+            "id": "2bf94813-b719-4cbc-80e9-21a2253a2b93",
+            "actions": [
+                {
+                    "name": "shoot",
+                    "type": "Button",
+                    "id": "169055d0-d9d7-4b3f-92bf-6c1f010061b8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e06a91be-f890-4f15-a575-b7af05da1746",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
