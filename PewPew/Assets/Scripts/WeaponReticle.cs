@@ -4,28 +4,28 @@ using UnityEngine;
 
 public class WeaponReticle : MonoBehaviour
 {
-    private GameObject leftController;
-    private GameObject rightController;
+    private GameObject _leftController;
+    private GameObject _rightController;
     
-    private GameObject cannonTransformLeft;
-    private GameObject cannonTransformRight;
+    private GameObject _cannonTransformLeft;
+    private GameObject _cannonTransformRight;
 
     
 
     // Start is called before the first frame update
     void Start()
     {
-        leftController = GameObject.Find("LeftHand Controller");     
-        rightController = GameObject.Find("RightHand Controller");     
+        _leftController = GameObject.Find("LeftHand Controller");     
+        _rightController = GameObject.Find("RightHand Controller");     
 
-        cannonTransformLeft = GameObject.Find("CannonTransformLeft");   
-        cannonTransformRight = GameObject.Find("CannonTransformRight");   
+        _cannonTransformLeft = GameObject.Find("CannonTransformLeft");   
+        _cannonTransformRight = GameObject.Find("CannonTransformRight");   
     }
 
     // Update is called once per frame
     void Update()
     {
-        cannonTransformLeft.transform.rotation = leftController.transform.rotation;
-        cannonTransformRight.transform.rotation = rightController.transform.rotation;
+        _cannonTransformLeft.transform.rotation = _leftController.transform.rotation;
+        _cannonTransformRight.transform.rotation = _rightController.transform.rotation;
     }
 }

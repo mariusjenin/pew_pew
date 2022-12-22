@@ -12,31 +12,31 @@ public class BaseProjectileBehaviour : MonoBehaviour
     public Vector3 startPos;
     public Vector3 dir; //Forward dir of cannon
 
-    private Vector3 targetPos;
-    private Vector3 total;
-    private float startTime;
+    private Vector3 _targetPos;
+    private Vector3 _total;
+    private float _startTime;
 
 
     void Start()
     {
-        targetPos = startPos + (dir * range);
-        startTime = Time.time;
+        _targetPos = startPos + (dir * range);
+        _startTime = Time.time;
     }
 
     void FixedUpdate()
     {
-        if(transform.position == targetPos)
+        if(transform.position == _targetPos)
         {
             Destroy(gameObject);
             return;
         }
         else
         {
-            float timeElapsed = (Time.time - startTime) * speed*5;
+            float timeElapsed = (Time.time - _startTime) * speed*5;
 
-            float t = timeElapsed / targetPos.magnitude;
+            float t = timeElapsed / _targetPos.magnitude;
 
-            transform.position = Vector3.Lerp(startPos, targetPos, t);
+            transform.position = Vector3.Lerp(startPos, _targetPos, t);
 
 
         }

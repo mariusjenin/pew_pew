@@ -10,29 +10,30 @@ public class WeaponBehaviour : MonoBehaviour
     public InputActionReference shootingReference = null;
     public GameObject projectile;
 
-    private BaseProjectileBehaviour pb;
-    private bool onCoolDown;
-    private float lastShotTime;
+    private BaseProjectileBehaviour _pb;
+    private bool _onCoolDown;
+    private float _lastShotTime;
 
-    private void shoot()
+    private void Shoot()
     {
-        GameObject instance = Instantiate(projectile, projectileSpawn.position, projectileSpawn.rotation);
-        pb = instance.GetComponent<BaseProjectileBehaviour>();
+        var position = projectileSpawn.position;
+        GameObject instance = Instantiate(projectile, position, projectileSpawn.rotation);
+        _pb = instance.GetComponent<BaseProjectileBehaviour>();
 
-        pb.dir = transform.forward;
-        pb.startPos = projectileSpawn.position;
+        _pb.dir = transform.forward;
+        _pb.startPos = position;
     }
 
-    private void checkCooldown()
+    private void CheckCooldown()
     {
-        float elapsedTime = Time.time - lastShotTime;
-        onCoolDown = !(pb.cooldown <= elapsedTime);
+        float elapsedTime = Time.time - _lastShotTime;
+        _onCoolDown = !(_pb.cooldown <= elapsedTime);
       
     }
     
     void Start()
     {
-        onCoolDown = false;
+        _onCoolDown = false;
     }
 
     void FixedUpdate()
@@ -41,13 +42,13 @@ public class WeaponBehaviour : MonoBehaviour
 
         if(pressed > 0)
         {
-            if(!onCoolDown)
+            if(!_onCoolDown)
             {
                 //Trigger pressed and weapon is not on cooldown
-                shoot();
-                lastShotTime = Time.time;
+                Shoot();
+                _lastShotTime = Time.time;
             }
-            checkCooldown();
+            CheckCooldown();
         }
     }
 

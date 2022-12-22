@@ -338,6 +338,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1106986862 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2788581073855965965, guid: 1b529c4a03abe174bbc7111a7641205b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2788581074403889445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1632930891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2788581074071977180, guid: 1b529c4a03abe174bbc7111a7641205b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2788581074403889445}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1632930892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632930891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6b05d96bab4661867f4299aa79836d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lengthGizmos: 1000
+  horizontalAngle: 60
+  verticalAngle: 35
+  cameraTransform: {fileID: 1759657081}
+  spaceshipTransform: {fileID: 1106986862}
+--- !u!4 &1759657081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2788581073134536433, guid: 1b529c4a03abe174bbc7111a7641205b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2788581074403889445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1834082751
 GameObject:
   m_ObjectHideFlags: 0
