@@ -362,9 +362,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6b05d96bab4661867f4299aa79836d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lengthGizmos: 1000
-  horizontalAngle: 60
-  verticalAngle: 35
+  lengthSpawn: 1000
+  coneAngle: 48.12
+  verticalAngle: -62
   cameraTransform: {fileID: 1759657081}
   spaceshipTransform: {fileID: 1106986862}
 --- !u!4 &1759657081 stripped
