@@ -1,25 +1,50 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-[CreateAssetMenu(fileName = "asteroid", menuName = "Asteroid")]
-public class Asteroid : ScriptableObject
+public class Asteroid : MonoBehaviour
 {
-    [SerializeField] private float size = 1;
-    [SerializeField] private float speed = 1;
-    [SerializeField] private float maxHp = 100;
+    private AsteroidSO _asteroidSo;
+    private Transform _target;
+    private Vector3 _rotations;
     private float _hp;
+    private const float RotationSpeedBase = 45f;
+    private const float SpeedBase = 10f;
 
-    public float Size => size;
-    public float Speed => speed;
-
-    public float Hp
+    public AsteroidSO AsteroidSo
     {
-        get => _hp;
-        set => _hp = value;
+        get => _asteroidSo;
+        set => _asteroidSo = value;
     }
 
-    private void OnEnable()
+    public Vector3 Rotations
     {
-        _hp = maxHp;
+        get => _rotations;
+    }
+
+    public Transform Target
+    {
+        set => _target = value;
+    }
+
+    public void Init()
+    {
+        _hp = _asteroidSo.MaxHp;
+        var tsh = RotationSpeedBase * _asteroidSo.Speed / _asteroidSo.Size;
+        _rotations = new Vector3(
+            Random.Range(-tsh,tsh),
+            Random.Range(-tsh,tsh),
+            Random.Range(-tsh,tsh));
+    }
+
+    public bool IsDead()
+    {
+        return _hp <= 0;
+    }
+
+    private void FixedUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _target.position, SpeedBase * _asteroidSo.Speed * Time.deltaTime);
+        transform.Rotate(_rotations * Time.deltaTime);
     }
 }

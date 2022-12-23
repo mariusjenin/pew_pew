@@ -362,11 +362,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6b05d96bab4661867f4299aa79836d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lengthSpawn: 1000
-  coneAngle: 48.12
-  verticalAngle: -62
+  lengthSpawn: 200
+  coneAngle: 70.9
   cameraTransform: {fileID: 1759657081}
   spaceshipTransform: {fileID: 1106986862}
+  _asteroids:
+  - deltaT: 4
+    asteroidSo: {fileID: 11400000, guid: d265a50ec0752bf4cb8b2c073aab3665, type: 2}
+  - deltaT: 8
+    asteroidSo: {fileID: 11400000, guid: 66506d29c42d722459469b7328d6dce0, type: 2}
+  - deltaT: 9
+    asteroidSo: {fileID: 11400000, guid: be3ec3f68512b0348a1e25d0b99c3728, type: 2}
+  - deltaT: 30
+    asteroidSo: {fileID: 11400000, guid: 3f2907078244ad64d823454f83b1bc9f, type: 2}
 --- !u!4 &1759657081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2788581073134536433, guid: 1b529c4a03abe174bbc7111a7641205b,
