@@ -7,7 +7,7 @@ public class BaseProjectileBehaviour : MonoBehaviour
     public GameObject projectileMesh;
     public float cooldown;
     public float range;
-    public float speed = 1;
+    public float speed;
 
     public Vector3 startPos;
     public Vector3 dir; //Forward dir of cannon
