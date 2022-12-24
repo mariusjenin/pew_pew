@@ -5,6 +5,7 @@ using UnityEngine;
 public class BaseProjectileBehaviour : MonoBehaviour
 {
     public GameObject projectileMesh;
+    public float damages;
     public float cooldown;
     public float range;
     public float speed;
@@ -38,8 +39,18 @@ public class BaseProjectileBehaviour : MonoBehaviour
 
             transform.position = Vector3.Lerp(startPos, _targetPos, t);
 
-
         }
 
+    }
+
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.tag == "asteroid")
+        {
+            GameObject asteroidGo = other.gameObject;
+            asteroidGo.GetComponent<Asteroid>().TakeDamages(damages);
+            Destroy(gameObject);
+        }
     }
 }

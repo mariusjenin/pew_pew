@@ -47,4 +47,13 @@ public class Asteroid : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, _target.position, SpeedBase * _asteroidSo.Speed * Time.deltaTime);
         transform.Rotate(_rotations * Time.deltaTime);
     }
+
+    public void TakeDamages(float damages)
+    {
+        _hp -= damages;
+
+        if(IsDead())
+            Destroy(gameObject);
+    }
+    
 }
