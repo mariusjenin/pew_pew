@@ -681,55 +681,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1718098830 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2788581074071977180, guid: 1b529c4a03abe174bbc7111a7641205b,
-    type: 3}
-  m_PrefabInstance: {fileID: 2788581074403889445}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1718098833
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718098830}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!135 &1718098834
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718098830}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 5.14
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1718098835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718098830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441fdc78dcf08ce41914074b0ec53354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hp: 100
-  hpSliderUi: {fileID: 1155480706}
 --- !u!1 &1881020245
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1718098835, guid: 1b529c4a03abe174bbc7111a7641205b, type: 3}
+      propertyPath: hpSliderUi
+      value: 
+      objectReference: {fileID: 1155480706}
     - target: {fileID: 2788581073281131786, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_InteractionManager
