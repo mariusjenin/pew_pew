@@ -1506,6 +1506,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "selectWeapon",
+                    "type": "Value",
+                    "id": "44276454-3c8d-42cb-b931-112d77b1f708",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1517,6 +1526,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6cfbbfbb-74be-461d-b055-692000011901",
+                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "interactions": "Sector(directions=4),Sector(directions=8)",
+                    "processors": "NormalizeVector2",
+                    "groups": "Generic XR Controller;Continuous Move",
+                    "action": "selectWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1534,6 +1554,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "selectWeapon",
+                    "type": "Value",
+                    "id": "de6d0fdb-3ecc-431f-b62f-cdaa9fbb8ef3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1545,6 +1574,17 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64b7c20b-e2fa-47ec-9a4c-7c350e409d24",
+                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "interactions": "Sector(directions=4),Sector(directions=8)",
+                    "processors": "NormalizeVector2",
+                    "groups": "Generic XR Controller;Continuous Move",
+                    "action": "selectWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
