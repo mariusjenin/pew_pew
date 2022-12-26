@@ -48,9 +48,9 @@ public class Asteroid : MonoBehaviour
         transform.Rotate(_rotations * Time.deltaTime);
     }
 
-    public void TakeDamages(float damages)
+    public void TakeDamages(float damage)
     {
-        _hp -= damages;
+        _hp -= damage;
 
         if(IsDead())
             Destroy(gameObject);
