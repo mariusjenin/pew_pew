@@ -26,7 +26,7 @@ namespace weapon
             projectileBehavior.SpawnTransform = projectileSpawn;
         }
 
-        protected override void EndShooting()
+        public override void EndShooting()
         {
             base.EndShooting();
             Destroy(_instanceProjectile);

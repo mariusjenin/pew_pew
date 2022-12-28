@@ -9,6 +9,7 @@ public class AsteroidSO : ScriptableObject
     [SerializeField] private float size = 1;
     [SerializeField] private float speed = 1;
     [SerializeField] private float maxHp = 100;
+    [SerializeField] private int score = 100;
     [SerializeField] private GameObject prefab;
 
     public float Size => size;
@@ -16,4 +17,6 @@ public class AsteroidSO : ScriptableObject
     public GameObject Prefab => prefab;
 
     public float MaxHp => maxHp;
+
+    public int Score => score;
 }

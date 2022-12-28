@@ -7,16 +7,21 @@ using weapon;
 
 public class WeaponSelecter : MonoBehaviour
 {
-    [SerializeField] private int indexLeft;
-    [SerializeField] private int indexRight;
-    
     [Serializable]
     public class WeaponSelectable
     {
         [SerializeField] public WeaponBehaviour weaponBehaviour;
         [SerializeField] public GameObject selectedOnBoard;
+        public void Unselect()
+        {
+            weaponBehaviour.enabled = false;
+            selectedOnBoard.SetActive(false);
+            weaponBehaviour.EndShooting();
+        }
     }
-
+    
+    [SerializeField] private int indexLeft;
+    [SerializeField] private int indexRight;
     [SerializeField] private List<WeaponSelectable> weaponsLeft;
     [SerializeField] private List<WeaponSelectable> weaponsRight;
     [SerializeField] private InputActionReference selectingReferenceL = null;
@@ -34,13 +39,11 @@ public class WeaponSelecter : MonoBehaviour
     {
         foreach (var weaponSelectable in weaponsLeft)
         {
-            weaponSelectable.weaponBehaviour.enabled = false;
-            weaponSelectable.selectedOnBoard.SetActive(false);
+            weaponSelectable.Unselect();
         }
         foreach (var weaponSelectable in weaponsRight)
         {
-            weaponSelectable.weaponBehaviour.enabled = false;
-            weaponSelectable.selectedOnBoard.SetActive(false);
+            weaponSelectable.Unselect();
         }
     }
 
@@ -60,36 +63,28 @@ public class WeaponSelecter : MonoBehaviour
 
     private void NextLeft()
     {
-        var selection = weaponsLeft[indexLeft];
-        selection.weaponBehaviour.enabled = false;
-        selection.selectedOnBoard.SetActive(false);
+        weaponsLeft[indexLeft].Unselect();
         indexLeft = (indexLeft + 1) % weaponsLeft.Count;
         SelectLeft(indexLeft);
     }
     
     private void PreviousLeft()
     {
-        var selection = weaponsLeft[indexLeft];
-        selection.weaponBehaviour.enabled = false;
-        selection.selectedOnBoard.SetActive(false);
+        weaponsLeft[indexLeft].Unselect();
         indexLeft = Mathf.Abs((indexLeft - 1) % weaponsLeft.Count);
         SelectLeft(indexLeft);
     }
     
     private void NextRight()
     {
-        var selection = weaponsRight[indexRight];
-        selection.weaponBehaviour.enabled = false;
-        selection.selectedOnBoard.SetActive(false);
+        weaponsRight[indexRight].Unselect();
         indexRight = (indexRight + 1) % weaponsRight.Count;
         SelectRight(indexRight);
     }
     
     private void PreviousRight()
     {
-        var selection = weaponsRight[indexRight];
-        selection.weaponBehaviour.enabled = false;
-        selection.selectedOnBoard.SetActive(false);
+        weaponsRight[indexRight].Unselect();
         indexRight = Mathf.Abs((indexRight - 1) % weaponsRight.Count);
         SelectRight(indexRight);
     }

@@ -52,8 +52,11 @@ public class Asteroid : MonoBehaviour
     {
         _hp -= damage;
 
-        if(IsDead())
+        if (IsDead())
+        {
+            ScoreManager.GetInstance().AddScore(_asteroidSo.Score);
             Destroy(gameObject);
+        }
     }
     
 }

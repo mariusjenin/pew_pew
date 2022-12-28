@@ -21,7 +21,7 @@ namespace weapon
             isShooting = true;
         }
 
-        protected virtual void EndShooting()
+        public virtual void EndShooting()
         {
             isShooting = false;
         }
