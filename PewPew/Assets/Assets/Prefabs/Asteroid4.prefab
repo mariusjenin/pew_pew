@@ -59,6 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b133f668fa4f5fbf64334a4f938c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shatteredMesh: {fileID: 7608782251174027603, guid: 2fe575473056639478950121aa2982cd,
+    type: 3}
 --- !u!1001 &222869348088804134
 PrefabInstance:
   m_ObjectHideFlags: 0

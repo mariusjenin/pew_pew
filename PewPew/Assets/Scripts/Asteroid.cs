@@ -4,6 +4,7 @@ using Random = UnityEngine.Random;
 
 public class Asteroid : MonoBehaviour
 {
+    [SerializeField] public GameObject shatteredMesh;
     private AsteroidSO _asteroidSo;
     private Transform _target;
     private Vector3 _rotations;
@@ -55,6 +56,12 @@ public class Asteroid : MonoBehaviour
         if (IsDead())
         {
             ScoreManager.GetInstance().AddScore(_asteroidSo.Score);
+            transform.GetChild(0).gameObject.SetActive(false);
+            GameObject shatteredGo = Instantiate(shatteredMesh, transform.position, transform.rotation);
+            shatteredGo.GetComponent<AsteroidShattered>().asteroidScale = transform.localScale;
+            // shatteredGo.asteroidScale = transform.localScale;
+
+
             Destroy(gameObject);
         }
     }

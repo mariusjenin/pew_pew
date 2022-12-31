@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b133f668fa4f5fbf64334a4f938c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shatteredMesh: {fileID: 7841657090412519962, guid: 49f7f40ce84adb843803076a437fa941,
+    type: 3}
 --- !u!136 &973860604361363995
 CapsuleCollider:
   m_ObjectHideFlags: 0
