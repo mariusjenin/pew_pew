@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04365709, g: 0.044818856, b: 0.05955075, a: 1}
+  m_IndirectSpecularColor: {r: 0.043454535, g: 0.044621818, b: 0.0595668, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e6ea88b5f6f8a444d8a836a0131185e7,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -902,6 +903,16 @@ PrefabInstance:
       propertyPath: scoreTextMeshPro
       value: 
       objectReference: {fileID: 1222647782}
+    - target: {fileID: 2788581073134536432, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: m_AllowXRRendering
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2788581073134536445, guid: 1b529c4a03abe174bbc7111a7641205b,
+        type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2788581073281131786, guid: 1b529c4a03abe174bbc7111a7641205b,
         type: 3}
       propertyPath: m_InteractionManager
