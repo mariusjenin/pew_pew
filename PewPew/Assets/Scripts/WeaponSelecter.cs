@@ -22,17 +22,22 @@ public class WeaponSelecter : MonoBehaviour
     
     [SerializeField] private int indexLeft;
     [SerializeField] private int indexRight;
+    [SerializeField] private float cd;
     [SerializeField] private List<WeaponSelectable> weaponsLeft;
     [SerializeField] private List<WeaponSelectable> weaponsRight;
     [SerializeField] private InputActionReference selectingReferenceL = null;
     [SerializeField] private InputActionReference selectingReferenceR = null;
 
+    private float _cdLeft;
+    private float _cdRight;
 
     private void Start()
     {
         ClearSelection();
         SelectLeft(indexLeft);
         SelectRight(indexRight);
+        _cdLeft = cd;
+        _cdRight = cd;
     }
 
     private void ClearSelection()
@@ -66,6 +71,7 @@ public class WeaponSelecter : MonoBehaviour
         weaponsLeft[indexLeft].Unselect();
         indexLeft = (indexLeft + 1) % weaponsLeft.Count;
         SelectLeft(indexLeft);
+        _cdLeft = cd;
     }
     
     private void PreviousLeft()
@@ -74,21 +80,24 @@ public class WeaponSelecter : MonoBehaviour
         indexLeft = (indexLeft - 1) % weaponsLeft.Count;
         if (indexLeft < 0) indexLeft += weaponsLeft.Count;
         SelectLeft(indexLeft);
+        _cdLeft = cd;
     }
     
     private void NextRight()
     {
         weaponsRight[indexRight].Unselect();
         indexRight = (indexRight + 1) % weaponsRight.Count;
-        if (indexRight < 0) indexRight += weaponsRight.Count;
         SelectRight(indexRight);
+        _cdRight = cd;
     }
     
     private void PreviousRight()
     {
         weaponsRight[indexRight].Unselect();
         indexRight = (indexRight - 1) % weaponsRight.Count;
+        if (indexRight < 0) indexRight += weaponsRight.Count;
         SelectRight(indexRight);
+        _cdRight = cd;
     }
 
     private void FixedUpdate() 
@@ -98,23 +107,32 @@ public class WeaponSelecter : MonoBehaviour
 
         Vector2 joyStickSelectR = selectingReferenceR.action.ReadValue<Vector2>();
         float directionR = Vector2.Dot(joyStickSelectR, Vector2.right);
-        
-        if(directionL > 0)
+
+        _cdLeft -= Time.fixedDeltaTime;
+        _cdRight -= Time.fixedDeltaTime;
+
+        if (_cdLeft <= 0)
         {
-            NextLeft();
-        }
-        else if(directionL < 0)
-        {
-            PreviousLeft();
+            if(directionL > 0)
+            {
+                NextLeft();
+            }
+            else if(directionL < 0)
+            {
+                PreviousLeft();
+            }
         }
 
-        if(directionR > 0)
+        if (_cdRight <= 0)
         {
-            NextRight();
-        }
-        else if(directionR < 0)
-        {
-            PreviousRight();
+            if (directionR > 0)
+            {
+                NextRight();
+            }
+            else if (directionR < 0)
+            {
+                PreviousRight();
+            }
         }
     }
 }

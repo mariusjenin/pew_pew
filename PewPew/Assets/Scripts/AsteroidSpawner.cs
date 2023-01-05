@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Unity.Profiling;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -70,6 +71,16 @@ public class AsteroidSpawner : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        Gizmos.color = Color.green;
+        for (int i = 0; i < 10; i++)
+        {
+            Gizmos.DrawLine(_origin, GetRandomSpawnPosition());
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        
         Gizmos.color = Color.red;
         Gizmos.DrawLine(_origin, _origin + _rotation *  Vector3.forward * lengthSpawn);
         Gizmos.color = Color.yellow;
@@ -89,10 +100,5 @@ public class AsteroidSpawner : MonoBehaviour
         Gizmos.DrawLine(_origin, _origin + _rotation * dir6 * lengthSpawn);
         Gizmos.DrawLine(_origin, _origin + _rotation * dir7 * lengthSpawn);
         Gizmos.DrawLine(_origin, _origin + _rotation * dir8 * lengthSpawn);
-        Gizmos.color = Color.green;
-        for (int i = 0; i < 10; i++)
-        {
-            Gizmos.DrawLine(_origin, GetRandomSpawnPosition());
-        }
     }
 }
