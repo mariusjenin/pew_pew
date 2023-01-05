@@ -5,30 +5,31 @@ namespace projectile
     public class BaseProjectileBehaviour : ProjectileBehaviour
     {
 
-        private float speed;
+        private float _speed;
         private Vector3 _targetPos;
 
         public float Speed
         {
-            get => speed;
-            set => speed = value;
+            get => _speed;
+            set => _speed = value;
         }
         
         protected override void Start()
         {
             base.Start();
-            _targetPos = spawnTransform.position + (directionTransform.forward * range);
+            _targetPos = spawnTransform.position + directionTransform.forward * range;
         }
 
         protected override void FixedUpdate()
         {
-            if(transform.position == _targetPos)
+            float dist = Vector3.Distance(transform.position, _targetPos);
+            if(dist < 0.5)
             {
                 Destroy(gameObject);
             }
             else
             {
-                float timeElapsed = (Time.time - startTime) * speed * 5;
+                float timeElapsed = (Time.time - startTime) * _speed;
 
                 float t = timeElapsed / _targetPos.magnitude;
 

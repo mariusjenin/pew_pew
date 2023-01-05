@@ -43,9 +43,26 @@ namespace projectile
 
         protected abstract void FixedUpdate();
 
-        protected abstract void HitAsteroid(Asteroid asteroid);
+        protected virtual void HitAsteroid(Asteroid asteroid)
+        {
+            //Nothing
+        }
+        
+        protected virtual void HitStayAsteroid(Asteroid asteroid)
+        {
+            //Nothing
+        }
 
         private void OnTriggerStay(Collider other) 
+        {
+            if(other.CompareTag("asteroid"))
+            {
+                GameObject asteroidGo = other.gameObject;
+                HitStayAsteroid(asteroidGo.GetComponent<Asteroid>());
+            }
+        }
+        
+        private void OnTriggerEnter(Collider other) 
         {
             if(other.CompareTag("asteroid"))
             {

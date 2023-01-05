@@ -33,6 +33,7 @@ Transform:
   - {fileID: 5628222991587853300}
   - {fileID: 6819327066130734265}
   - {fileID: 2208948506289088133}
+  - {fileID: 5597646671201053371}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -141,6 +142,59 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &4283025580938510144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5597646671201053371}
+  - component: {fileID: 6789021982995737919}
+  m_Layer: 0
+  m_Name: bigLaserWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5597646671201053371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283025580938510144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1917763471708946546}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6789021982995737919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4283025580938510144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964d1ff6db3340b1accf36d871cf3e07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingReference: {fileID: -6441491330424017981, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  cooldown: 5
+  projectileSpawn: {fileID: 5628222991587853300}
+  range: 150
+  damage: 20
+  projectile: {fileID: 978936336885074457, guid: cf54fb90bf137664a8918c56913b9f51,
+    type: 3}
+  speedExpand: 2
 --- !u!1 &5231900966909623406
 GameObject:
   m_ObjectHideFlags: 0

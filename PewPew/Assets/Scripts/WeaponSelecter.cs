@@ -71,7 +71,8 @@ public class WeaponSelecter : MonoBehaviour
     private void PreviousLeft()
     {
         weaponsLeft[indexLeft].Unselect();
-        indexLeft = Mathf.Abs((indexLeft - 1) % weaponsLeft.Count);
+        indexLeft = (indexLeft - 1) % weaponsLeft.Count;
+        if (indexLeft < 0) indexLeft += weaponsLeft.Count;
         SelectLeft(indexLeft);
     }
     
@@ -79,13 +80,14 @@ public class WeaponSelecter : MonoBehaviour
     {
         weaponsRight[indexRight].Unselect();
         indexRight = (indexRight + 1) % weaponsRight.Count;
+        if (indexRight < 0) indexRight += weaponsRight.Count;
         SelectRight(indexRight);
     }
     
     private void PreviousRight()
     {
         weaponsRight[indexRight].Unselect();
-        indexRight = Mathf.Abs((indexRight - 1) % weaponsRight.Count);
+        indexRight = (indexRight - 1) % weaponsRight.Count;
         SelectRight(indexRight);
     }
 
