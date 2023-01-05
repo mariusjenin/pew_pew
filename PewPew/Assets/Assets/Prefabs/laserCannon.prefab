@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1917763471708946546}
-  - component: {fileID: 3694411433100560660}
   m_Layer: 0
   m_Name: laserCannon
   m_TagString: Untagged
@@ -37,27 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3694411433100560660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597303322622041778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1001d6f14cb2cc444be158bc2e66171a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootingReference: {fileID: -8973362098105141514, guid: c348712bda248c246b8c49b3db54643f,
-    type: 3}
-  cooldown: 0
-  projectileSpawn: {fileID: 5628222991587853300}
-  range: 0
-  damage: 0
-  projectile: {fileID: 2107228122261679236, guid: 14b5c84a3fb9ff7468cebffa9c03013b,
-    type: 3}
-  speed: 0
 --- !u!1 &2782380345944990657
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,6 +173,7 @@ MonoBehaviour:
   projectile: {fileID: 978936336885074457, guid: cf54fb90bf137664a8918c56913b9f51,
     type: 3}
   speedExpand: 2
+  speedShrink: 0
 --- !u!1 &5231900966909623406
 GameObject:
   m_ObjectHideFlags: 0

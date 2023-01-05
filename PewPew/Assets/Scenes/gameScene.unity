@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_MaxRaycastDistance: 10
   m_ReticlePrefab: {fileID: 1507716444316720858, guid: 6c75974e7037d5c45975272c226950df,
     type: 3}
-  m_PrefabScalingFactor: 1
+  m_PrefabScalingFactor: 0.9
   m_UndoDistanceScaling: 1
   m_AlignPrefabWithSurfaceNormal: 0
   m_EndpointSmoothingTime: 0.02
@@ -2370,7 +2370,7 @@ MonoBehaviour:
   m_MaxRaycastDistance: 10
   m_ReticlePrefab: {fileID: 1507716444316720858, guid: e9fe0a18cf0a30a4ca08a61c04e460b9,
     type: 3}
-  m_PrefabScalingFactor: 1
+  m_PrefabScalingFactor: 0.9
   m_UndoDistanceScaling: 1
   m_AlignPrefabWithSurfaceNormal: 0
   m_EndpointSmoothingTime: 0.02
@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_StopNaN: 0
   m_Dithering: 0
   m_ClearDepth: 1
-  m_AllowXRRendering: 1
+  m_AllowXRRendering: 0
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
@@ -3493,8 +3493,7 @@ PrefabInstance:
       propertyPath: cooldown
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3694411433100560660, guid: 4209f290a8c9acc45bc15c90da3cf994, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4209f290a8c9acc45bc15c90da3cf994, type: 3}
 --- !u!224 &1678538224735002710
 RectTransform:
@@ -5323,7 +5322,7 @@ PrefabInstance:
       objectReference: {fileID: -8973362098105141514, guid: c348712bda248c246b8c49b3db54643f,
         type: 3}
     m_RemovedComponents:
-    - {fileID: 3694411433100560660, guid: 4209f290a8c9acc45bc15c90da3cf994, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4209f290a8c9acc45bc15c90da3cf994, type: 3}
 --- !u!4 &4337816660670169875
 Transform:
